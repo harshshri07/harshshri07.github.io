@@ -11,37 +11,73 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">Harsh Shrishrimal</div>
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span class="logo-text">Portfolio</span>
+                <div class="logo-glow"></div>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#extracurricular" class="nav-link">Activities</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
+        </div>
+        <div class="scroll-progress" id="scroll-progress"></div>
     </nav>
 
     <section id="home" class="hero">
+        <div class="particles-background" id="particles-js"></div>
         <div class="hero-content">
             <div class="profile-photo">
-                <img src="assets/profile-photo.jpg" alt="Harsh Shrishrimal" id="profile-img">
+                <div class="profile-ring"></div>
+                <img src="headshot.png" alt="Harsh Shrishrimal" id="profile-img">
+                <div class="profile-glow"></div>
             </div>
-            <h1>Hi, I'm <span class="highlight">Harsh Shrishrimal</span></h1>
-            <p class="hero-subtitle">Software Developer & Tech Enthusiast</p>
-            <p class="hero-description">Passionate about creating innovative solutions and solving complex problems</p>
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name-highlight">Harsh Shrishrimal</span>
+            </h1>
+            <div class="hero-subtitle-container">
+                <span class="hero-subtitle" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">Passionate Data Science graduate student specializing in AI, Machine Learning, and innovative solutions</p>
             <div class="hero-buttons">
-                <a href="#contact" class="cta-button primary">Get in Touch</a>
-                <a href="assets/Harsh-S-Resume.pdf" class="cta-button secondary" target="_blank">Download Resume</a>
+                <a href="#contact" class="cta-button primary">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="Harsh Shrishrimal Resume.pdf" class="cta-button secondary" target="_blank">
+                    <span>Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
         </div>
     </section>
 
@@ -50,23 +86,98 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm Harsh Shrishrimal, a passionate software developer with a strong foundation in computer science and a love for creating innovative solutions. I enjoy working with cutting-edge technologies and am always eager to learn and grow in the ever-evolving tech landscape.</p>
-                    <p>My journey in technology has led me to explore various domains including web development, software engineering, and emerging technologies. I believe in writing clean, efficient code and creating user-friendly applications that make a difference.</p>
+                    <p>Hello! I'm Harsh Shrishrimal, a passionate Data Science graduate student at the University of Maryland, College Park, with a strong foundation in Machine Learning, AI, and software development. I specialize in building AI-powered solutions, developing ML models, and creating innovative applications that solve real-world problems.</p>
+                    <p>With experience as an AI Intern at Converge Technology Solutions and a Machine Learning Engineer at Shanti Technologies, I've worked on cutting-edge projects involving LLM security, dynamic pricing algorithms, and recommendation systems. I'm passionate about leveraging data science and AI to create impactful solutions and am always eager to explore new technologies in the rapidly evolving field of artificial intelligence.</p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Projects Completed</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-up">
+                    <div class="education-date">
+                        <span class="year">May 2026</span>
                     </div>
-                    <div class="stat-item">
-                        <h3>Multiple</h3>
-                        <p>Technologies</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Always</h3>
-                        <p>Learning</p>
+                    <div class="education-content">
+                        <h3>Master of Science in Data Science</h3>
+                        <h4>University of Maryland, College Park, MD</h4>
+                        <p class="gpa">GPA: 3.73/4.0</p>
+                        <p>Coursework: Probability & Statistics, Machine Learning, Cloud Computing, Natural Language Processing, Deep Learning</p>
                     </div>
                 </div>
+
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-date">
+                        <span class="year">Jun 2023</span>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Engineering in Computer Science</h3>
+                        <h4>Savitribai Phule Pune University, Pune, India</h4>
+                        <p class="gpa">GPA: 3.2/4.0</p>
+                        <p>Coursework: Database Management Systems, Business Intelligence, Data Science and Big Data, Artificial Intelligence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item" data-aos="fade-up">
+                    <div class="experience-date">
+                        <span class="year">June 2025 - Aug 2025</span>
+                    </div>
+                        <div class="experience-content">
+                            <h3>Artificial Intelligence Intern</h3>
+                            <h4>Converge Technology Solutions - New York, NY (Remote)</h4>
+                            <ul class="experience-description">
+                                <li>Developed OWASP-based AI pentesting modules using Django, Celery, and DSPy to detect LLM vulnerabilities</li>
+                                <li>Integrated shared memory context and MIPROv2 optimizer, boosting injection accuracy to a 4.5/5 success grade</li>
+                                <li>Enhanced UI and built auto-stop attack flow using WebSockets, HTML, and Docker, reducing manual testing time</li>
+                                <li>Collaborated in an agile team using GitHub, Jira, and DSPy, contributing to red team tools and statistical test design</li>
+                            </ul>
+                            <ul class="experience-skills">
+                                <li>Django</li>
+                                <li>Celery</li>
+                                <li>DSPy</li>
+                                <li>WebSockets</li>
+                                <li>Docker</li>
+                                <li>GitHub</li>
+                                <li>Jira</li>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-date">
+                        <span class="year">Jul 2023 - Jun 2024</span>
+                    </div>
+                        <div class="experience-content">
+                            <h3>Machine Learning Engineer</h3>
+                            <h4>Shanti Technologies - Pune, India</h4>
+                            <ul class="experience-description">
+                                <li>Trained TensorFlow models using historical sales data to minimize stockouts for perishable goods</li>
+                                <li>Developed dynamic pricing algorithms in Python, integrating seasonal and behavioral logic via custom APIs</li>
+                                <li>Designed ETL pipelines with Apache Airflow and Google Cloud Functions to automate inventory and billing data flow</li>
+                                <li>Applied time-series modeling and built ML recommendation systems supporting loyalty programs and offers</li>
+                            </ul>
+                            <ul class="experience-skills">
+                                <li>TensorFlow</li>
+                                <li>Python</li>
+                                <li>Apache Airflow</li>
+                                <li>Google Cloud</li>
+                                <li>ETL Pipelines</li>
+                                <li>Time-series Modeling</li>
+                                <li>ML Recommendation Systems</li>
+                            </ul>
+                        </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -76,94 +187,198 @@
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-image">
-                        <img src="assets/project1.jpg" alt="Medical Assistance Platform">
-                    </div>
-                    <div class="project-content">
-                        <h3>Medical Assistance Platform</h3>
-                        <p>A comprehensive healthcare platform with appointment scheduling, patient management, and telemedicine features.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                    <div class="project-image project-image-1">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/harshshri07" target="_blank" title="View Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" target="_blank" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        <div class="project-overlay">
+                            <h4>Bitcoin Analysis</h4>
                         </div>
                     </div>
+                        <div class="project-content">
+                            <h3>Bitcoin News Keyword Trend Analysis</h3>
+                            <ul class="project-description">
+                                <li>Built an NLP pipeline using TextBlob and NewsAPI to match news keywords with CoinGecko price data</li>
+                                <li>Merged and cleaned datasets with pandas and ran Granger causality tests to analyze keyword-price relationships</li>
+                                <li>Containerized the app with Docker and deployed an interactive dashboard for sentiment signals and live Bitcoin prices</li>
+                                <li>Visualized keyword–price trends using Matplotlib and Seaborn, revealing market sentiment influence on volatility</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TextBlob</span>
+                                <span class="tech-tag">NewsAPI</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/harshshri07" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="assets/project2.jpg" alt="E-Commerce Platform">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with user authentication, product management, and payment integration.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">MySQL</span>
+                    <div class="project-image project-image-2">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/harshshri07" target="_blank" title="View Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" target="_blank" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        <div class="project-overlay">
+                            <h4>AI Trading Bot</h4>
                         </div>
                     </div>
+                        <div class="project-content">
+                            <h3>AI-Powered Stock Trading Bot</h3>
+                            <ul class="project-description">
+                                <li>Trained a DQN agent in TensorFlow on market indicators (EMA, MACD) to optimize trade entry and exit</li>
+                                <li>Simulated live trading using a custom backtesting setup and integrated REST APIs for real-time data</li>
+                                <li>Applied NumPy for time-series transformations and shaped rewards to improve long-term portfolio stability</li>
+                                <li>Implemented advanced trading strategies with risk management and portfolio optimization algorithms</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">DQN</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">Backtesting</span>
+                                <span class="tech-tag">Reinforcement Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/harshshri07" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="assets/project3.jpg" alt="Data Analytics Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <h3>Data Analytics Dashboard</h3>
-                        <p>An interactive dashboard for data visualization and analysis with real-time updates and custom charts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">Chart.js</span>
+                    <div class="project-image project-image-3">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/harshshri07" target="_blank" title="View Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" target="_blank" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                        <div class="project-overlay">
+                            <h4>OCR Mobile App</h4>
                         </div>
                     </div>
+                        <div class="project-content">
+                            <h3>Handwritten Character Recognition</h3>
+                            <ul class="project-description">
+                                <li>Built a mobile OCR app using Flutter and Google ML Kit to recognize handwritten characters in real time</li>
+                                <li>Applied OpenCV techniques (grayscale, binarization, contours) for preprocessing handwritten input</li>
+                                <li>Deployed and tested app via Android Studio, optimizing for on-device inference, model size, and UI responsiveness</li>
+                                <li>Achieved high accuracy in character recognition with real-time processing capabilities</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Google ML Kit</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">OCR</span>
+                                <span class="tech-tag">Mobile Development</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/harshshri07" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="assets/project4.jpg" alt="Mobile App">
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-item" data-aos="fade-up">
+                    <div class="publication-content">
+                        <h3>Review on Handwritten Character Recognition</h3>
+                        <p class="publication-journal">International Journal of Innovative Research in Computer and Communication Engineering (IJIRCCE)</p>
+                        <p class="publication-details">Vol. 11, Issue 3, March 2023</p>
+                        <p class="publication-doi">DOI: 10.15680/IJIRCCE.2023.1103081</p>
+                        <p class="publication-description">Co-authored research paper on handwritten character recognition techniques and methodologies, exploring various approaches in computer vision and machine learning for character recognition systems.</p>
                     </div>
-                    <div class="project-content">
-                        <h3>Mobile Application</h3>
-                        <p>A cross-platform mobile application with modern UI/UX design and seamless user experience.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">TypeScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-item" data-aos="fade-up">
+                    <div class="certification-content">
+                        <h3>Artificial Intelligence Fundamentals</h3>
+                        <p class="certification-provider">IBM</p>
+                    </div>
+                </div>
+                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-content">
+                        <h3>Big Data 101</h3>
+                        <p class="certification-provider">IBM</p>
+                    </div>
+                </div>
+                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-content">
+                        <h3>Data Analytics & Visualization</h3>
+                        <p class="certification-provider">Accenture</p>
+                    </div>
+                </div>
+                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certification-content">
+                        <h3>Databases for Developers</h3>
+                        <p class="certification-provider">Oracle</p>
+                    </div>
+                </div>
+                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certification-content">
+                        <h3>Hadoop 101</h3>
+                        <p class="certification-provider">IBM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="extracurricular" class="extracurricular">
+        <div class="container">
+            <h2>Extracurricular Activities</h2>
+            <div class="extracurricular-grid">
+                <div class="extracurricular-item" data-aos="fade-up">
+                    <div class="extracurricular-content">
+                        <h3>Technical Clubs & Organizations</h3>
+                        <p>Active participation in computer science and data science clubs, contributing to technical discussions and collaborative projects.</p>
+                    </div>
+                </div>
+                <div class="extracurricular-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="extracurricular-content">
+                        <h3>Hackathons & Competitions</h3>
+                        <p>Participated in various coding competitions and hackathons, developing innovative solutions and collaborating with diverse teams.</p>
+                    </div>
+                </div>
+                <div class="extracurricular-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="extracurricular-content">
+                        <h3>Research & Development</h3>
+                        <p>Engaged in research activities and development projects, contributing to academic publications and technical innovations.</p>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/harshshri07" target="_blank" title="View Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" target="_blank" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
                         </div>
+                <div class="extracurricular-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="extracurricular-content">
+                        <h3>Community Involvement</h3>
+                        <p>Volunteered in community service activities and technical workshops, sharing knowledge and mentoring fellow students.</p>
                     </div>
                 </div>
             </div>
@@ -174,68 +389,219 @@
         <div class="container">
             <h2>Skills & Technologies</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                <div class="skill-category programming-languages">
+                    <h3>Programming Languages</h3>
+                    <div class="programming-grid">
+                        <div class="programming-item">
+                            <div class="programming-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span class="programming-name">Python</span>
+                            <div class="programming-level">Expert</div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                        <div class="programming-item">
+                            <div class="programming-icon r">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span class="programming-name">R</span>
+                            <div class="programming-level">Advanced</div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
+                        <div class="programming-item">
+                            <div class="programming-icon sql">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="programming-name">SQL</span>
+                            <div class="programming-level">Expert</div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
+                        <div class="programming-item">
+                            <div class="programming-icon cpp">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="programming-name">C++</span>
+                            <div class="programming-level">Intermediate</div>
+                        </div>
+                        <div class="programming-item">
+                            <div class="programming-icon js">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="programming-name">JavaScript</span>
+                            <div class="programming-level">Advanced</div>
+                        </div>
+                        <div class="programming-item">
+                            <div class="programming-icon html">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="programming-name">HTML</span>
+                            <div class="programming-level">Advanced</div>
+                        </div>
+                        <div class="programming-item">
+                            <div class="programming-icon java">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span class="programming-name">Java</span>
+                            <div class="programming-level">Intermediate</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>Data Analysis & ML</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Pandas</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MySQL</span>
+                            <i class="fas fa-chart-area"></i>
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Plotly</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>DSPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>DQN</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <h3>AI & Web Development</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
+                            <i class="fas fa-language"></i>
+                            <span>NLP</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
+                            <i class="fas fa-robot"></i>
+                            <span>LLMs</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>RL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-magic"></i>
+                            <span>Generative AI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>RecSys</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Celery</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-plug"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wifi"></i>
+                            <span>WebSockets</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-docker"></i>
                             <span>Docker</span>
                         </div>
                         <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>BigQuery</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Functions</span>
+                        </div>
+                        <div class="skill-item">
                             <i class="fab fa-aws"></i>
                             <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Apache Airflow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-elephant"></i>
+                            <span>Hadoop</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Spark</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-book"></i>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Jira</span>
                         </div>
                     </div>
                 </div>
@@ -307,6 +673,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
