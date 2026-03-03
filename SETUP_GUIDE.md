@@ -9,8 +9,8 @@ Your personalized portfolio is ready! Here's how to get it live on GitHub Pages:
 - `index.html` - Main portfolio page with your information
 - `styles.css` - Modern styling and responsive design
 - `script.js` - Interactive features and animations
-- `assets/` - Folder for images and resume
-- `assets/Harsh-S-Resume.pdf` - Your resume (already added)
+- `assets/` - Folder for images
+- `Harsh Shrishrimal Resume.pdf` - Your resume (already added)
 
 ## 🚀 Deploy to GitHub Pages
 
